@@ -12,9 +12,22 @@ namespace Calculadora
 {
     public partial class frmPrincipal : Form
     {
+        string equacao = "";
+
         public frmPrincipal()
         {
             InitializeComponent();
+        }
+
+        private void btnApagar_Click(object sender, EventArgs e)
+        {
+            lblResultado.Text = "";
+            this.equacao = "";
+        }
+
+        private void btnIgual_Click(object sender, EventArgs e)
+        {
+            lblResultado.Text = Math.Equals();
         }
     }
 }
