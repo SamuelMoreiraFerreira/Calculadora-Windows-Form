@@ -28,22 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLoading));
             pgbCarregamento = new ProgressBar();
             lblLoading = new Label();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            pbxDio = new PictureBox();
+            pbxJotaro = new PictureBox();
+            tmrCarregamento = new System.Windows.Forms.Timer(components);
+            ((System.ComponentModel.ISupportInitialize)pbxDio).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxJotaro).BeginInit();
             SuspendLayout();
             // 
             // pgbCarregamento
             // 
             pgbCarregamento.Location = new Point(12, 390);
             pgbCarregamento.Name = "pgbCarregamento";
-            pgbCarregamento.Size = new Size(360, 59);
+            pgbCarregamento.Size = new Size(360, 43);
+            pgbCarregamento.Style = ProgressBarStyle.Continuous;
             pgbCarregamento.TabIndex = 0;
-            pgbCarregamento.Value = 100;
             // 
             // lblLoading
             // 
@@ -56,27 +58,33 @@
             lblLoading.TabIndex = 1;
             lblLoading.Text = "Loading";
             // 
-            // pictureBox1
+            // pbxDio
             // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.BackgroundImage = Properties.Resources.dio;
-            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(190, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(274, 452);
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
+            pbxDio.BackColor = Color.Transparent;
+            pbxDio.BackgroundImage = Properties.Resources.dio;
+            pbxDio.BackgroundImageLayout = ImageLayout.Stretch;
+            pbxDio.Location = new Point(190, 12);
+            pbxDio.Name = "pbxDio";
+            pbxDio.Size = new Size(274, 452);
+            pbxDio.TabIndex = 2;
+            pbxDio.TabStop = false;
             // 
-            // pictureBox2
+            // pbxJotaro
             // 
-            pictureBox2.BackColor = Color.Transparent;
-            pictureBox2.BackgroundImage = Properties.Resources.jotaro;
-            pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox2.Location = new Point(-65, 12);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(249, 452);
-            pictureBox2.TabIndex = 3;
-            pictureBox2.TabStop = false;
+            pbxJotaro.BackColor = Color.Transparent;
+            pbxJotaro.BackgroundImage = Properties.Resources.jotaro;
+            pbxJotaro.BackgroundImageLayout = ImageLayout.Stretch;
+            pbxJotaro.Location = new Point(-65, 12);
+            pbxJotaro.Name = "pbxJotaro";
+            pbxJotaro.Size = new Size(249, 452);
+            pbxJotaro.TabIndex = 3;
+            pbxJotaro.TabStop = false;
+            // 
+            // tmrCarregamento
+            // 
+            tmrCarregamento.Enabled = true;
+            tmrCarregamento.Interval = 1000;
+            tmrCarregamento.Tick += tmrCarregamento_Tick;
             // 
             // frmLoading
             // 
@@ -85,16 +93,17 @@
             ClientSize = new Size(384, 461);
             Controls.Add(lblLoading);
             Controls.Add(pgbCarregamento);
-            Controls.Add(pictureBox1);
-            Controls.Add(pictureBox2);
+            Controls.Add(pbxDio);
+            Controls.Add(pbxJotaro);
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "frmLoading";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Calculadora Ora Ora...";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            Load += frmLoading_Load;
+            ((System.ComponentModel.ISupportInitialize)pbxDio).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxJotaro).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -103,7 +112,8 @@
 
         private ProgressBar pgbCarregamento;
         private Label lblLoading;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
+        private PictureBox pbxDio;
+        private PictureBox pbxJotaro;
+        private System.Windows.Forms.Timer tmrCarregamento;
     }
 }
