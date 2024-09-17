@@ -36,7 +36,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
-
             // 
             // pgbCarregamento
             // 
@@ -79,7 +78,7 @@
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
             // 
-            // Form1
+            // frmLoading
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -88,10 +87,11 @@
             Controls.Add(pgbCarregamento);
             Controls.Add(pictureBox1);
             Controls.Add(pictureBox2);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
+            FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
-            Name = "Form1";
+            Name = "frmLoading";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Calculadora Ora Ora...";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
