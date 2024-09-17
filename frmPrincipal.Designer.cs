@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             lblResultado = new Label();
-            button4 = new Button();
-            button1 = new Button();
-            button2 = new Button();
+            btnTrocaDeSinal = new Button();
+            btnZero = new Button();
+            btnVirgula = new Button();
             btnIgual = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
-            button9 = new Button();
-            button10 = new Button();
-            button11 = new Button();
-            button12 = new Button();
-            button13 = new Button();
-            button17 = new Button();
-            button18 = new Button();
-            button19 = new Button();
-            button20 = new Button();
+            btnSoma = new Button();
+            btnNove = new Button();
+            btnOito = new Button();
+            btnSete = new Button();
+            btnSubtracao = new Button();
+            btnSeis = new Button();
+            btnCinco = new Button();
+            btnQuatro = new Button();
+            btnDivisao = new Button();
+            btnMultiplicacao = new Button();
+            btnTres = new Button();
+            btnDois = new Button();
+            btnUm = new Button();
             btnApagar = new Button();
             SuspendLayout();
             // 
@@ -61,44 +61,44 @@
             lblResultado.TabIndex = 0;
             lblResultado.TextAlign = ContentAlignment.MiddleRight;
             // 
-            // button4
+            // btnTrocaDeSinal
             // 
-            button4.BackColor = Color.DodgerBlue;
-            button4.FlatStyle = FlatStyle.Popup;
-            button4.Font = new Font("Courier New", 15.75F, FontStyle.Bold);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(12, 124);
-            button4.Name = "button4";
-            button4.Size = new Size(85, 85);
-            button4.TabIndex = 4;
-            button4.Text = "+/-";
-            button4.UseVisualStyleBackColor = false;
+            btnTrocaDeSinal.BackColor = Color.DodgerBlue;
+            btnTrocaDeSinal.FlatStyle = FlatStyle.Popup;
+            btnTrocaDeSinal.Font = new Font("Courier New", 15.75F, FontStyle.Bold);
+            btnTrocaDeSinal.ForeColor = Color.White;
+            btnTrocaDeSinal.Location = new Point(12, 124);
+            btnTrocaDeSinal.Name = "btnTrocaDeSinal";
+            btnTrocaDeSinal.Size = new Size(85, 85);
+            btnTrocaDeSinal.TabIndex = 4;
+            btnTrocaDeSinal.Text = "+/-";
+            btnTrocaDeSinal.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnZero
             // 
-            button1.BackColor = Color.Gray;
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Font = new Font("Courier New", 15.75F);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(103, 124);
-            button1.Name = "button1";
-            button1.Size = new Size(85, 85);
-            button1.TabIndex = 5;
-            button1.Text = "0";
-            button1.UseVisualStyleBackColor = false;
+            btnZero.BackColor = Color.Gray;
+            btnZero.FlatStyle = FlatStyle.Popup;
+            btnZero.Font = new Font("Courier New", 15.75F);
+            btnZero.ForeColor = Color.White;
+            btnZero.Location = new Point(103, 124);
+            btnZero.Name = "btnZero";
+            btnZero.Size = new Size(85, 85);
+            btnZero.TabIndex = 5;
+            btnZero.Text = "0";
+            btnZero.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnVirgula
             // 
-            button2.BackColor = Color.DodgerBlue;
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.Font = new Font("Courier New", 15.75F, FontStyle.Bold);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(194, 124);
-            button2.Name = "button2";
-            button2.Size = new Size(85, 85);
-            button2.TabIndex = 6;
-            button2.Text = ",";
-            button2.UseVisualStyleBackColor = false;
+            btnVirgula.BackColor = Color.DodgerBlue;
+            btnVirgula.FlatStyle = FlatStyle.Popup;
+            btnVirgula.Font = new Font("Courier New", 15.75F, FontStyle.Bold);
+            btnVirgula.ForeColor = Color.White;
+            btnVirgula.Location = new Point(194, 124);
+            btnVirgula.Name = "btnVirgula";
+            btnVirgula.Size = new Size(85, 85);
+            btnVirgula.TabIndex = 6;
+            btnVirgula.Text = ",";
+            btnVirgula.UseVisualStyleBackColor = false;
             // 
             // btnIgual
             // 
@@ -113,174 +113,174 @@
             btnIgual.Text = "=";
             btnIgual.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnSoma
             // 
-            button5.BackColor = Color.DodgerBlue;
-            button5.FlatStyle = FlatStyle.Popup;
-            button5.Font = new Font("Courier New", 15.75F, FontStyle.Bold);
-            button5.ForeColor = Color.White;
-            button5.Location = new Point(285, 397);
-            button5.Name = "button5";
-            button5.Size = new Size(85, 85);
-            button5.TabIndex = 11;
-            button5.Text = "+";
-            button5.UseVisualStyleBackColor = false;
+            btnSoma.BackColor = Color.DodgerBlue;
+            btnSoma.FlatStyle = FlatStyle.Popup;
+            btnSoma.Font = new Font("Courier New", 15.75F, FontStyle.Bold);
+            btnSoma.ForeColor = Color.White;
+            btnSoma.Location = new Point(285, 397);
+            btnSoma.Name = "btnSoma";
+            btnSoma.Size = new Size(85, 85);
+            btnSoma.TabIndex = 11;
+            btnSoma.Text = "+";
+            btnSoma.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnNove
             // 
-            button6.BackColor = Color.Gray;
-            button6.FlatStyle = FlatStyle.Popup;
-            button6.Font = new Font("Courier New", 15.75F);
-            button6.ForeColor = Color.White;
-            button6.Location = new Point(194, 397);
-            button6.Name = "button6";
-            button6.Size = new Size(85, 85);
-            button6.TabIndex = 10;
-            button6.Text = "9";
-            button6.UseVisualStyleBackColor = false;
+            btnNove.BackColor = Color.Gray;
+            btnNove.FlatStyle = FlatStyle.Popup;
+            btnNove.Font = new Font("Courier New", 15.75F);
+            btnNove.ForeColor = Color.White;
+            btnNove.Location = new Point(194, 397);
+            btnNove.Name = "btnNove";
+            btnNove.Size = new Size(85, 85);
+            btnNove.TabIndex = 10;
+            btnNove.Text = "9";
+            btnNove.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // btnOito
             // 
-            button7.BackColor = Color.Gray;
-            button7.FlatStyle = FlatStyle.Popup;
-            button7.Font = new Font("Courier New", 15.75F);
-            button7.ForeColor = Color.White;
-            button7.Location = new Point(103, 397);
-            button7.Name = "button7";
-            button7.Size = new Size(85, 85);
-            button7.TabIndex = 9;
-            button7.Text = "8";
-            button7.UseVisualStyleBackColor = false;
+            btnOito.BackColor = Color.Gray;
+            btnOito.FlatStyle = FlatStyle.Popup;
+            btnOito.Font = new Font("Courier New", 15.75F);
+            btnOito.ForeColor = Color.White;
+            btnOito.Location = new Point(103, 397);
+            btnOito.Name = "btnOito";
+            btnOito.Size = new Size(85, 85);
+            btnOito.TabIndex = 9;
+            btnOito.Text = "8";
+            btnOito.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // btnSete
             // 
-            button8.BackColor = Color.Gray;
-            button8.FlatStyle = FlatStyle.Popup;
-            button8.Font = new Font("Courier New", 15.75F);
-            button8.ForeColor = Color.White;
-            button8.Location = new Point(12, 397);
-            button8.Name = "button8";
-            button8.Size = new Size(85, 85);
-            button8.TabIndex = 8;
-            button8.Text = "7";
-            button8.UseVisualStyleBackColor = false;
+            btnSete.BackColor = Color.Gray;
+            btnSete.FlatStyle = FlatStyle.Popup;
+            btnSete.Font = new Font("Courier New", 15.75F);
+            btnSete.ForeColor = Color.White;
+            btnSete.Location = new Point(12, 397);
+            btnSete.Name = "btnSete";
+            btnSete.Size = new Size(85, 85);
+            btnSete.TabIndex = 8;
+            btnSete.Text = "7";
+            btnSete.UseVisualStyleBackColor = false;
             // 
-            // button9
+            // btnSubtracao
             // 
-            button9.BackColor = Color.DodgerBlue;
-            button9.FlatStyle = FlatStyle.Popup;
-            button9.Font = new Font("Courier New", 15.75F, FontStyle.Bold);
-            button9.ForeColor = Color.White;
-            button9.Location = new Point(285, 306);
-            button9.Name = "button9";
-            button9.Size = new Size(85, 85);
-            button9.TabIndex = 15;
-            button9.Text = "-";
-            button9.UseVisualStyleBackColor = false;
+            btnSubtracao.BackColor = Color.DodgerBlue;
+            btnSubtracao.FlatStyle = FlatStyle.Popup;
+            btnSubtracao.Font = new Font("Courier New", 15.75F, FontStyle.Bold);
+            btnSubtracao.ForeColor = Color.White;
+            btnSubtracao.Location = new Point(285, 306);
+            btnSubtracao.Name = "btnSubtracao";
+            btnSubtracao.Size = new Size(85, 85);
+            btnSubtracao.TabIndex = 15;
+            btnSubtracao.Text = "-";
+            btnSubtracao.UseVisualStyleBackColor = false;
             // 
-            // button10
+            // btnSeis
             // 
-            button10.BackColor = Color.Gray;
-            button10.FlatStyle = FlatStyle.Popup;
-            button10.Font = new Font("Courier New", 15.75F);
-            button10.ForeColor = Color.White;
-            button10.Location = new Point(194, 306);
-            button10.Name = "button10";
-            button10.Size = new Size(85, 85);
-            button10.TabIndex = 14;
-            button10.Text = "6";
-            button10.UseVisualStyleBackColor = false;
+            btnSeis.BackColor = Color.Gray;
+            btnSeis.FlatStyle = FlatStyle.Popup;
+            btnSeis.Font = new Font("Courier New", 15.75F);
+            btnSeis.ForeColor = Color.White;
+            btnSeis.Location = new Point(194, 306);
+            btnSeis.Name = "btnSeis";
+            btnSeis.Size = new Size(85, 85);
+            btnSeis.TabIndex = 14;
+            btnSeis.Text = "6";
+            btnSeis.UseVisualStyleBackColor = false;
             // 
-            // button11
+            // btnCinco
             // 
-            button11.BackColor = Color.Gray;
-            button11.FlatStyle = FlatStyle.Popup;
-            button11.Font = new Font("Courier New", 15.75F);
-            button11.ForeColor = Color.White;
-            button11.Location = new Point(103, 306);
-            button11.Name = "button11";
-            button11.Size = new Size(85, 85);
-            button11.TabIndex = 13;
-            button11.Text = "5";
-            button11.UseVisualStyleBackColor = false;
+            btnCinco.BackColor = Color.Gray;
+            btnCinco.FlatStyle = FlatStyle.Popup;
+            btnCinco.Font = new Font("Courier New", 15.75F);
+            btnCinco.ForeColor = Color.White;
+            btnCinco.Location = new Point(103, 306);
+            btnCinco.Name = "btnCinco";
+            btnCinco.Size = new Size(85, 85);
+            btnCinco.TabIndex = 13;
+            btnCinco.Text = "5";
+            btnCinco.UseVisualStyleBackColor = false;
             // 
-            // button12
+            // btnQuatro
             // 
-            button12.BackColor = Color.Gray;
-            button12.FlatStyle = FlatStyle.Popup;
-            button12.Font = new Font("Courier New", 15.75F);
-            button12.ForeColor = Color.White;
-            button12.Location = new Point(12, 306);
-            button12.Name = "button12";
-            button12.Size = new Size(85, 85);
-            button12.TabIndex = 12;
-            button12.Text = "4";
-            button12.UseVisualStyleBackColor = false;
+            btnQuatro.BackColor = Color.Gray;
+            btnQuatro.FlatStyle = FlatStyle.Popup;
+            btnQuatro.Font = new Font("Courier New", 15.75F);
+            btnQuatro.ForeColor = Color.White;
+            btnQuatro.Location = new Point(12, 306);
+            btnQuatro.Name = "btnQuatro";
+            btnQuatro.Size = new Size(85, 85);
+            btnQuatro.TabIndex = 12;
+            btnQuatro.Text = "4";
+            btnQuatro.UseVisualStyleBackColor = false;
             // 
-            // button13
+            // btnDivisao
             // 
-            button13.BackColor = Color.DodgerBlue;
-            button13.FlatStyle = FlatStyle.Popup;
-            button13.Font = new Font("Courier New", 15.75F, FontStyle.Bold);
-            button13.ForeColor = Color.White;
-            button13.Location = new Point(285, 124);
-            button13.Name = "button13";
-            button13.Size = new Size(85, 85);
-            button13.TabIndex = 23;
-            button13.Text = "/";
-            button13.UseVisualStyleBackColor = false;
+            btnDivisao.BackColor = Color.DodgerBlue;
+            btnDivisao.FlatStyle = FlatStyle.Popup;
+            btnDivisao.Font = new Font("Courier New", 15.75F, FontStyle.Bold);
+            btnDivisao.ForeColor = Color.White;
+            btnDivisao.Location = new Point(285, 124);
+            btnDivisao.Name = "btnDivisao";
+            btnDivisao.Size = new Size(85, 85);
+            btnDivisao.TabIndex = 23;
+            btnDivisao.Text = "/";
+            btnDivisao.UseVisualStyleBackColor = false;
             // 
-            // button17
+            // btnMultiplicacao
             // 
-            button17.BackColor = Color.DodgerBlue;
-            button17.FlatStyle = FlatStyle.Popup;
-            button17.Font = new Font("Courier New", 15.75F, FontStyle.Bold);
-            button17.ForeColor = Color.White;
-            button17.Location = new Point(285, 215);
-            button17.Name = "button17";
-            button17.Size = new Size(85, 85);
-            button17.TabIndex = 19;
-            button17.Text = "X";
-            button17.UseVisualStyleBackColor = false;
+            btnMultiplicacao.BackColor = Color.DodgerBlue;
+            btnMultiplicacao.FlatStyle = FlatStyle.Popup;
+            btnMultiplicacao.Font = new Font("Courier New", 15.75F, FontStyle.Bold);
+            btnMultiplicacao.ForeColor = Color.White;
+            btnMultiplicacao.Location = new Point(285, 215);
+            btnMultiplicacao.Name = "btnMultiplicacao";
+            btnMultiplicacao.Size = new Size(85, 85);
+            btnMultiplicacao.TabIndex = 19;
+            btnMultiplicacao.Text = "X";
+            btnMultiplicacao.UseVisualStyleBackColor = false;
             // 
-            // button18
+            // btnTres
             // 
-            button18.BackColor = Color.Gray;
-            button18.FlatStyle = FlatStyle.Popup;
-            button18.Font = new Font("Courier New", 15.75F);
-            button18.ForeColor = Color.White;
-            button18.Location = new Point(194, 215);
-            button18.Name = "button18";
-            button18.Size = new Size(85, 85);
-            button18.TabIndex = 18;
-            button18.Text = "3";
-            button18.UseVisualStyleBackColor = false;
+            btnTres.BackColor = Color.Gray;
+            btnTres.FlatStyle = FlatStyle.Popup;
+            btnTres.Font = new Font("Courier New", 15.75F);
+            btnTres.ForeColor = Color.White;
+            btnTres.Location = new Point(194, 215);
+            btnTres.Name = "btnTres";
+            btnTres.Size = new Size(85, 85);
+            btnTres.TabIndex = 18;
+            btnTres.Text = "3";
+            btnTres.UseVisualStyleBackColor = false;
             // 
-            // button19
+            // btnDois
             // 
-            button19.BackColor = Color.Gray;
-            button19.FlatStyle = FlatStyle.Popup;
-            button19.Font = new Font("Courier New", 15.75F);
-            button19.ForeColor = Color.White;
-            button19.Location = new Point(103, 215);
-            button19.Name = "button19";
-            button19.Size = new Size(85, 85);
-            button19.TabIndex = 17;
-            button19.Text = "2";
-            button19.UseVisualStyleBackColor = false;
+            btnDois.BackColor = Color.Gray;
+            btnDois.FlatStyle = FlatStyle.Popup;
+            btnDois.Font = new Font("Courier New", 15.75F);
+            btnDois.ForeColor = Color.White;
+            btnDois.Location = new Point(103, 215);
+            btnDois.Name = "btnDois";
+            btnDois.Size = new Size(85, 85);
+            btnDois.TabIndex = 17;
+            btnDois.Text = "2";
+            btnDois.UseVisualStyleBackColor = false;
             // 
-            // button20
+            // btnUm
             // 
-            button20.BackColor = Color.Gray;
-            button20.FlatStyle = FlatStyle.Popup;
-            button20.Font = new Font("Courier New", 15.75F);
-            button20.ForeColor = Color.White;
-            button20.Location = new Point(12, 215);
-            button20.Name = "button20";
-            button20.Size = new Size(85, 85);
-            button20.TabIndex = 16;
-            button20.Text = "1";
-            button20.UseVisualStyleBackColor = false;
+            btnUm.BackColor = Color.Gray;
+            btnUm.FlatStyle = FlatStyle.Popup;
+            btnUm.Font = new Font("Courier New", 15.75F);
+            btnUm.ForeColor = Color.White;
+            btnUm.Location = new Point(12, 215);
+            btnUm.Name = "btnUm";
+            btnUm.Size = new Size(85, 85);
+            btnUm.TabIndex = 16;
+            btnUm.Text = "1";
+            btnUm.UseVisualStyleBackColor = false;
             // 
             // btnApagar
             // 
@@ -302,23 +302,23 @@
             BackColor = Color.Black;
             ClientSize = new Size(384, 590);
             Controls.Add(btnApagar);
-            Controls.Add(button13);
-            Controls.Add(button17);
-            Controls.Add(button18);
-            Controls.Add(button19);
-            Controls.Add(button20);
-            Controls.Add(button9);
-            Controls.Add(button10);
-            Controls.Add(button11);
-            Controls.Add(button12);
-            Controls.Add(button5);
-            Controls.Add(button6);
-            Controls.Add(button7);
-            Controls.Add(button8);
+            Controls.Add(btnDivisao);
+            Controls.Add(btnMultiplicacao);
+            Controls.Add(btnTres);
+            Controls.Add(btnDois);
+            Controls.Add(btnUm);
+            Controls.Add(btnSubtracao);
+            Controls.Add(btnSeis);
+            Controls.Add(btnCinco);
+            Controls.Add(btnQuatro);
+            Controls.Add(btnSoma);
+            Controls.Add(btnNove);
+            Controls.Add(btnOito);
+            Controls.Add(btnSete);
             Controls.Add(btnIgual);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(button4);
+            Controls.Add(btnVirgula);
+            Controls.Add(btnZero);
+            Controls.Add(btnTrocaDeSinal);
             Controls.Add(lblResultado);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
@@ -331,23 +331,23 @@
         #endregion
 
         private Label lblResultado;
-        private Button button4;
-        private Button button1;
-        private Button button2;
+        private Button btnTrocaDeSinal;
+        private Button btnZero;
+        private Button btnVirgula;
         private Button btnIgual;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button8;
-        private Button button9;
-        private Button button10;
-        private Button button11;
-        private Button button12;
-        private Button button13;
-        private Button button17;
-        private Button button18;
-        private Button button19;
-        private Button button20;
+        private Button btnSoma;
+        private Button btnNove;
+        private Button btnOito;
+        private Button btnSete;
+        private Button btnSubtracao;
+        private Button btnSeis;
+        private Button btnCinco;
+        private Button btnQuatro;
+        private Button btnDivisao;
+        private Button btnMultiplicacao;
+        private Button btnTres;
+        private Button btnDois;
+        private Button btnUm;
         private Button btnApagar;
     }
 }
