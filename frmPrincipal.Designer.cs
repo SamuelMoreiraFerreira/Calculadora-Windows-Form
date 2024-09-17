@@ -28,18 +28,275 @@
         /// </summary>
         private void InitializeComponent()
         {
+            lblResultado = new Label();
+            button4 = new Button();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            button5 = new Button();
+            button6 = new Button();
+            button7 = new Button();
+            button8 = new Button();
+            button9 = new Button();
+            button10 = new Button();
+            button11 = new Button();
+            button12 = new Button();
+            button13 = new Button();
+            button14 = new Button();
+            button15 = new Button();
+            button16 = new Button();
+            button17 = new Button();
+            button18 = new Button();
+            button19 = new Button();
+            button20 = new Button();
             SuspendLayout();
+            // 
+            // lblResultado
+            // 
+            lblResultado.BorderStyle = BorderStyle.FixedSingle;
+            lblResultado.Font = new Font("Simplex_IV25", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblResultado.Location = new Point(12, 9);
+            lblResultado.Name = "lblResultado";
+            lblResultado.Size = new Size(360, 100);
+            lblResultado.TabIndex = 0;
+            lblResultado.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(12, 391);
+            button4.Name = "button4";
+            button4.Size = new Size(85, 58);
+            button4.TabIndex = 4;
+            button4.Text = "+/-";
+            button4.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(103, 391);
+            button1.Name = "button1";
+            button1.Size = new Size(85, 58);
+            button1.TabIndex = 5;
+            button1.Text = "0";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(194, 391);
+            button2.Name = "button2";
+            button2.Size = new Size(85, 58);
+            button2.TabIndex = 6;
+            button2.Text = ",";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(285, 391);
+            button3.Name = "button3";
+            button3.Size = new Size(85, 58);
+            button3.TabIndex = 7;
+            button3.Text = "=";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(285, 327);
+            button5.Name = "button5";
+            button5.Size = new Size(85, 58);
+            button5.TabIndex = 11;
+            button5.Text = "+";
+            button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            button6.Location = new Point(194, 327);
+            button6.Name = "button6";
+            button6.Size = new Size(85, 58);
+            button6.TabIndex = 10;
+            button6.Text = "3";
+            button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            button7.Location = new Point(103, 327);
+            button7.Name = "button7";
+            button7.Size = new Size(85, 58);
+            button7.TabIndex = 9;
+            button7.Text = "2";
+            button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            button8.Location = new Point(12, 327);
+            button8.Name = "button8";
+            button8.Size = new Size(85, 58);
+            button8.TabIndex = 8;
+            button8.Text = "1";
+            button8.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            button9.Location = new Point(285, 263);
+            button9.Name = "button9";
+            button9.Size = new Size(85, 58);
+            button9.TabIndex = 15;
+            button9.Text = "-";
+            button9.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            button10.Location = new Point(194, 263);
+            button10.Name = "button10";
+            button10.Size = new Size(85, 58);
+            button10.TabIndex = 14;
+            button10.Text = "6";
+            button10.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            button11.Location = new Point(103, 263);
+            button11.Name = "button11";
+            button11.Size = new Size(85, 58);
+            button11.TabIndex = 13;
+            button11.Text = "5";
+            button11.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            button12.Location = new Point(12, 263);
+            button12.Name = "button12";
+            button12.Size = new Size(85, 58);
+            button12.TabIndex = 12;
+            button12.Text = "4";
+            button12.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            button13.Location = new Point(285, 135);
+            button13.Name = "button13";
+            button13.Size = new Size(85, 58);
+            button13.TabIndex = 23;
+            button13.Text = "/";
+            button13.UseVisualStyleBackColor = true;
+            // 
+            // button14
+            // 
+            button14.Location = new Point(194, 135);
+            button14.Name = "button14";
+            button14.Size = new Size(85, 58);
+            button14.TabIndex = 22;
+            button14.Text = "DEL";
+            button14.UseVisualStyleBackColor = true;
+            // 
+            // button15
+            // 
+            button15.Location = new Point(103, 135);
+            button15.Name = "button15";
+            button15.Size = new Size(85, 58);
+            button15.TabIndex = 21;
+            button15.Text = "C";
+            button15.UseVisualStyleBackColor = true;
+            // 
+            // button16
+            // 
+            button16.Location = new Point(12, 135);
+            button16.Name = "button16";
+            button16.Size = new Size(85, 58);
+            button16.TabIndex = 20;
+            button16.Text = "CE";
+            button16.UseVisualStyleBackColor = true;
+            // 
+            // button17
+            // 
+            button17.Location = new Point(285, 199);
+            button17.Name = "button17";
+            button17.Size = new Size(85, 58);
+            button17.TabIndex = 19;
+            button17.Text = "X";
+            button17.UseVisualStyleBackColor = true;
+            // 
+            // button18
+            // 
+            button18.Location = new Point(194, 199);
+            button18.Name = "button18";
+            button18.Size = new Size(85, 58);
+            button18.TabIndex = 18;
+            button18.Text = "9";
+            button18.UseVisualStyleBackColor = true;
+            // 
+            // button19
+            // 
+            button19.Location = new Point(103, 199);
+            button19.Name = "button19";
+            button19.Size = new Size(85, 58);
+            button19.TabIndex = 17;
+            button19.Text = "8";
+            button19.UseVisualStyleBackColor = true;
+            // 
+            // button20
+            // 
+            button20.Location = new Point(12, 199);
+            button20.Name = "button20";
+            button20.Size = new Size(85, 58);
+            button20.TabIndex = 16;
+            button20.Text = "7";
+            button20.UseVisualStyleBackColor = true;
             // 
             // frmPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(384, 461);
+            Controls.Add(button13);
+            Controls.Add(button14);
+            Controls.Add(button15);
+            Controls.Add(button16);
+            Controls.Add(button17);
+            Controls.Add(button18);
+            Controls.Add(button19);
+            Controls.Add(button20);
+            Controls.Add(button9);
+            Controls.Add(button10);
+            Controls.Add(button11);
+            Controls.Add(button12);
+            Controls.Add(button5);
+            Controls.Add(button6);
+            Controls.Add(button7);
+            Controls.Add(button8);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(button4);
+            Controls.Add(lblResultado);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "frmPrincipal";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Calculadora Ora Ora...";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Label lblResultado;
+        private Button button4;
+        private Button button1;
+        private Button button2;
+        private Button button3;
+        private Button button5;
+        private Button button6;
+        private Button button7;
+        private Button button8;
+        private Button button9;
+        private Button button10;
+        private Button button11;
+        private Button button12;
+        private Button button13;
+        private Button button14;
+        private Button button15;
+        private Button button16;
+        private Button button17;
+        private Button button18;
+        private Button button19;
+        private Button button20;
     }
 }
