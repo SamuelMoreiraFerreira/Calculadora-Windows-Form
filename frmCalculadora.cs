@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Calculadora
 {
-    public partial class frmPrincipal : Form
+    public partial class frmCalculadora : Form
     {
 
         readonly DataTable table = new DataTable();
@@ -36,16 +36,11 @@ namespace Calculadora
 
         string equacao = "";
 
-        public frmPrincipal()
+        public frmCalculadora()
         {
             InitializeComponent();
         }
-        private void frmPrincipal_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            // Finaliza todos os processos do Aplicativo
-            Application.Exit();
-        }
-
+        
         private void btnApagar_Click(object sender, EventArgs e)
         {
             this.equacao = "";

@@ -26,8 +26,8 @@ namespace Calculadora
                 // Fecha a tela atual
                 this.Hide();
 
-                // Abre a tela da calculadora
-                frmPrincipal screen = new frmPrincipal();
+                // Abre a tela do menu
+                frmMenu screen = new frmMenu();
                 screen.Show();
             }
 

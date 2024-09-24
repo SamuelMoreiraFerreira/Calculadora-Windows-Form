@@ -1,6 +1,6 @@
 ﻿namespace Calculadora
 {
-    partial class frmPrincipal
+    partial class frmCalculadora
     {
         /// <summary>
         /// Required designer variable.
@@ -400,7 +400,6 @@
             Name = "frmPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Calculadora Ora Ora...";
-            FormClosed += frmPrincipal_FormClosed;
             ResumeLayout(false);
         }
 
