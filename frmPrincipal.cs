@@ -31,7 +31,7 @@ namespace Calculadora
             { "btnDivisao", "/" },
             { "btnMultiplicacao", "*" },
             { "btnVirgula", "." },
-            { "btnPorcentagem", "/ 100" },
+            { "btnPorcentagem", "/100" },
         };
 
         string equacao = "";
@@ -81,10 +81,13 @@ namespace Calculadora
             // Usando o operador 'as' para evitar crash na conversão
             Button? btn = sender as Button;
 
-            // Evitando crash caso o botão não estiver mapeado (KeyNotFoundException)
-            if (this.map.ContainsKey(btn.Name))
+            if (btn != null)
             {
-                this.UpdateEquacao(this.map[btn.Name]);
+                // Evitando crash caso o botão não estiver mapeado (KeyNotFoundException)
+                if (this.map.ContainsKey(btn.Name))
+                {
+                    this.UpdateEquacao(this.map[btn.Name]);
+                }
             }
         }
     }
