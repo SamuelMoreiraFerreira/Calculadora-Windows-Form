@@ -118,10 +118,40 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="kira" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kira.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dio1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dio.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="mista" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mista.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="jotaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jotaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="joseph" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\joseph.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jotaro1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jotaro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="johnny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\johnny.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pucci" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pucci.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="giorno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\giorno.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gyro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gyro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diavolo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diavolo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

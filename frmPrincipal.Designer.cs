@@ -51,25 +51,27 @@
             // 
             // lblResultado
             // 
-            lblResultado.BackColor = Color.OliveDrab;
+            lblResultado.BackColor = Color.White;
             lblResultado.BorderStyle = BorderStyle.FixedSingle;
             lblResultado.FlatStyle = FlatStyle.Popup;
             lblResultado.Font = new Font("Simplex_IV25", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblResultado.Location = new Point(12, 9);
+            lblResultado.Location = new Point(14, 12);
             lblResultado.Name = "lblResultado";
-            lblResultado.Size = new Size(358, 100);
+            lblResultado.Size = new Size(516, 133);
             lblResultado.TabIndex = 0;
             lblResultado.TextAlign = ContentAlignment.MiddleRight;
             // 
             // btnTrocaDeSinal
             // 
             btnTrocaDeSinal.BackColor = Color.DodgerBlue;
+            btnTrocaDeSinal.Cursor = Cursors.Hand;
             btnTrocaDeSinal.FlatStyle = FlatStyle.Popup;
             btnTrocaDeSinal.Font = new Font("Courier New", 15.75F, FontStyle.Bold);
             btnTrocaDeSinal.ForeColor = Color.White;
-            btnTrocaDeSinal.Location = new Point(12, 124);
+            btnTrocaDeSinal.Location = new Point(12, 163);
+            btnTrocaDeSinal.Margin = new Padding(3, 4, 3, 4);
             btnTrocaDeSinal.Name = "btnTrocaDeSinal";
-            btnTrocaDeSinal.Size = new Size(85, 85);
+            btnTrocaDeSinal.Size = new Size(125, 125);
             btnTrocaDeSinal.TabIndex = 4;
             btnTrocaDeSinal.Text = "+/-";
             btnTrocaDeSinal.UseVisualStyleBackColor = false;
@@ -77,12 +79,16 @@
             // btnZero
             // 
             btnZero.BackColor = Color.Gray;
+            btnZero.BackgroundImage = Properties.Resources.pucci;
+            btnZero.BackgroundImageLayout = ImageLayout.Stretch;
+            btnZero.Cursor = Cursors.Hand;
             btnZero.FlatStyle = FlatStyle.Popup;
-            btnZero.Font = new Font("Courier New", 15.75F);
+            btnZero.Font = new Font("Wide Latin", 19.8000011F);
             btnZero.ForeColor = Color.White;
-            btnZero.Location = new Point(103, 124);
+            btnZero.Location = new Point(143, 163);
+            btnZero.Margin = new Padding(3, 4, 3, 4);
             btnZero.Name = "btnZero";
-            btnZero.Size = new Size(85, 85);
+            btnZero.Size = new Size(125, 125);
             btnZero.TabIndex = 5;
             btnZero.Text = "0";
             btnZero.UseVisualStyleBackColor = false;
@@ -90,12 +96,14 @@
             // btnVirgula
             // 
             btnVirgula.BackColor = Color.DodgerBlue;
+            btnVirgula.Cursor = Cursors.Hand;
             btnVirgula.FlatStyle = FlatStyle.Popup;
             btnVirgula.Font = new Font("Courier New", 15.75F, FontStyle.Bold);
             btnVirgula.ForeColor = Color.White;
-            btnVirgula.Location = new Point(194, 124);
+            btnVirgula.Location = new Point(274, 163);
+            btnVirgula.Margin = new Padding(3, 4, 3, 4);
             btnVirgula.Name = "btnVirgula";
-            btnVirgula.Size = new Size(85, 85);
+            btnVirgula.Size = new Size(125, 125);
             btnVirgula.TabIndex = 6;
             btnVirgula.Text = ",";
             btnVirgula.UseVisualStyleBackColor = false;
@@ -103,12 +111,14 @@
             // btnIgual
             // 
             btnIgual.BackColor = Color.Orange;
+            btnIgual.Cursor = Cursors.Hand;
             btnIgual.FlatStyle = FlatStyle.Popup;
             btnIgual.Font = new Font("Courier New", 15.75F, FontStyle.Bold);
             btnIgual.ForeColor = Color.White;
-            btnIgual.Location = new Point(12, 489);
+            btnIgual.Location = new Point(10, 694);
+            btnIgual.Margin = new Padding(3, 4, 3, 4);
             btnIgual.Name = "btnIgual";
-            btnIgual.Size = new Size(267, 85);
+            btnIgual.Size = new Size(389, 125);
             btnIgual.TabIndex = 7;
             btnIgual.Text = "=";
             btnIgual.UseVisualStyleBackColor = false;
@@ -116,12 +126,14 @@
             // btnSoma
             // 
             btnSoma.BackColor = Color.DodgerBlue;
+            btnSoma.Cursor = Cursors.Hand;
             btnSoma.FlatStyle = FlatStyle.Popup;
             btnSoma.Font = new Font("Courier New", 15.75F, FontStyle.Bold);
             btnSoma.ForeColor = Color.White;
-            btnSoma.Location = new Point(285, 397);
+            btnSoma.Location = new Point(405, 561);
+            btnSoma.Margin = new Padding(3, 4, 3, 4);
             btnSoma.Name = "btnSoma";
-            btnSoma.Size = new Size(85, 85);
+            btnSoma.Size = new Size(125, 125);
             btnSoma.TabIndex = 11;
             btnSoma.Text = "+";
             btnSoma.UseVisualStyleBackColor = false;
@@ -129,12 +141,16 @@
             // btnNove
             // 
             btnNove.BackColor = Color.Gray;
+            btnNove.BackgroundImage = Properties.Resources.diavolo;
+            btnNove.BackgroundImageLayout = ImageLayout.Stretch;
+            btnNove.Cursor = Cursors.Hand;
             btnNove.FlatStyle = FlatStyle.Popup;
-            btnNove.Font = new Font("Courier New", 15.75F);
-            btnNove.ForeColor = Color.White;
-            btnNove.Location = new Point(194, 397);
+            btnNove.Font = new Font("Wide Latin", 19.8000011F);
+            btnNove.ForeColor = Color.Lime;
+            btnNove.Location = new Point(274, 562);
+            btnNove.Margin = new Padding(3, 4, 3, 4);
             btnNove.Name = "btnNove";
-            btnNove.Size = new Size(85, 85);
+            btnNove.Size = new Size(125, 125);
             btnNove.TabIndex = 10;
             btnNove.Text = "9";
             btnNove.UseVisualStyleBackColor = false;
@@ -142,12 +158,16 @@
             // btnOito
             // 
             btnOito.BackColor = Color.Gray;
+            btnOito.BackgroundImage = Properties.Resources.giorno;
+            btnOito.BackgroundImageLayout = ImageLayout.Stretch;
+            btnOito.Cursor = Cursors.Hand;
             btnOito.FlatStyle = FlatStyle.Popup;
-            btnOito.Font = new Font("Courier New", 15.75F);
-            btnOito.ForeColor = Color.White;
-            btnOito.Location = new Point(103, 397);
+            btnOito.Font = new Font("Wide Latin", 19.8000011F);
+            btnOito.ForeColor = Color.FromArgb(15, 116, 245);
+            btnOito.Location = new Point(143, 561);
+            btnOito.Margin = new Padding(3, 4, 3, 4);
             btnOito.Name = "btnOito";
-            btnOito.Size = new Size(85, 85);
+            btnOito.Size = new Size(125, 125);
             btnOito.TabIndex = 9;
             btnOito.Text = "8";
             btnOito.UseVisualStyleBackColor = false;
@@ -155,12 +175,16 @@
             // btnSete
             // 
             btnSete.BackColor = Color.Gray;
+            btnSete.BackgroundImage = Properties.Resources.gyro;
+            btnSete.BackgroundImageLayout = ImageLayout.Stretch;
+            btnSete.Cursor = Cursors.Hand;
             btnSete.FlatStyle = FlatStyle.Popup;
-            btnSete.Font = new Font("Courier New", 15.75F);
+            btnSete.Font = new Font("Wide Latin", 19.8000011F);
             btnSete.ForeColor = Color.White;
-            btnSete.Location = new Point(12, 397);
+            btnSete.Location = new Point(12, 562);
+            btnSete.Margin = new Padding(3, 4, 3, 4);
             btnSete.Name = "btnSete";
-            btnSete.Size = new Size(85, 85);
+            btnSete.Size = new Size(125, 125);
             btnSete.TabIndex = 8;
             btnSete.Text = "7";
             btnSete.UseVisualStyleBackColor = false;
@@ -168,12 +192,14 @@
             // btnSubtracao
             // 
             btnSubtracao.BackColor = Color.DodgerBlue;
+            btnSubtracao.Cursor = Cursors.Hand;
             btnSubtracao.FlatStyle = FlatStyle.Popup;
             btnSubtracao.Font = new Font("Courier New", 15.75F, FontStyle.Bold);
             btnSubtracao.ForeColor = Color.White;
-            btnSubtracao.Location = new Point(285, 306);
+            btnSubtracao.Location = new Point(405, 428);
+            btnSubtracao.Margin = new Padding(3, 4, 3, 4);
             btnSubtracao.Name = "btnSubtracao";
-            btnSubtracao.Size = new Size(85, 85);
+            btnSubtracao.Size = new Size(125, 125);
             btnSubtracao.TabIndex = 15;
             btnSubtracao.Text = "-";
             btnSubtracao.UseVisualStyleBackColor = false;
@@ -181,12 +207,16 @@
             // btnSeis
             // 
             btnSeis.BackColor = Color.Gray;
+            btnSeis.BackgroundImage = Properties.Resources.johnny;
+            btnSeis.BackgroundImageLayout = ImageLayout.Stretch;
+            btnSeis.Cursor = Cursors.Hand;
             btnSeis.FlatStyle = FlatStyle.Popup;
-            btnSeis.Font = new Font("Courier New", 15.75F);
+            btnSeis.Font = new Font("Wide Latin", 19.8000011F);
             btnSeis.ForeColor = Color.White;
-            btnSeis.Location = new Point(194, 306);
+            btnSeis.Location = new Point(274, 428);
+            btnSeis.Margin = new Padding(3, 4, 3, 4);
             btnSeis.Name = "btnSeis";
-            btnSeis.Size = new Size(85, 85);
+            btnSeis.Size = new Size(125, 125);
             btnSeis.TabIndex = 14;
             btnSeis.Text = "6";
             btnSeis.UseVisualStyleBackColor = false;
@@ -194,12 +224,16 @@
             // btnCinco
             // 
             btnCinco.BackColor = Color.Gray;
+            btnCinco.BackgroundImage = Properties.Resources.kira;
+            btnCinco.BackgroundImageLayout = ImageLayout.Stretch;
+            btnCinco.Cursor = Cursors.Hand;
             btnCinco.FlatStyle = FlatStyle.Popup;
-            btnCinco.Font = new Font("Courier New", 15.75F);
+            btnCinco.Font = new Font("Wide Latin", 19.8000011F);
             btnCinco.ForeColor = Color.White;
-            btnCinco.Location = new Point(103, 306);
+            btnCinco.Location = new Point(143, 428);
+            btnCinco.Margin = new Padding(3, 4, 3, 4);
             btnCinco.Name = "btnCinco";
-            btnCinco.Size = new Size(85, 85);
+            btnCinco.Size = new Size(125, 125);
             btnCinco.TabIndex = 13;
             btnCinco.Text = "5";
             btnCinco.UseVisualStyleBackColor = false;
@@ -207,12 +241,16 @@
             // btnQuatro
             // 
             btnQuatro.BackColor = Color.Gray;
+            btnQuatro.BackgroundImage = Properties.Resources.mista;
+            btnQuatro.BackgroundImageLayout = ImageLayout.Stretch;
+            btnQuatro.Cursor = Cursors.Hand;
             btnQuatro.FlatStyle = FlatStyle.Popup;
-            btnQuatro.Font = new Font("Courier New", 15.75F);
+            btnQuatro.Font = new Font("Wide Latin", 19.8000011F);
             btnQuatro.ForeColor = Color.White;
-            btnQuatro.Location = new Point(12, 306);
+            btnQuatro.Location = new Point(12, 429);
+            btnQuatro.Margin = new Padding(3, 4, 3, 4);
             btnQuatro.Name = "btnQuatro";
-            btnQuatro.Size = new Size(85, 85);
+            btnQuatro.Size = new Size(125, 125);
             btnQuatro.TabIndex = 12;
             btnQuatro.Text = "4";
             btnQuatro.UseVisualStyleBackColor = false;
@@ -220,12 +258,14 @@
             // btnDivisao
             // 
             btnDivisao.BackColor = Color.DodgerBlue;
+            btnDivisao.Cursor = Cursors.Hand;
             btnDivisao.FlatStyle = FlatStyle.Popup;
             btnDivisao.Font = new Font("Courier New", 15.75F, FontStyle.Bold);
             btnDivisao.ForeColor = Color.White;
-            btnDivisao.Location = new Point(285, 124);
+            btnDivisao.Location = new Point(405, 163);
+            btnDivisao.Margin = new Padding(3, 4, 3, 4);
             btnDivisao.Name = "btnDivisao";
-            btnDivisao.Size = new Size(85, 85);
+            btnDivisao.Size = new Size(125, 125);
             btnDivisao.TabIndex = 23;
             btnDivisao.Text = "/";
             btnDivisao.UseVisualStyleBackColor = false;
@@ -233,12 +273,14 @@
             // btnMultiplicacao
             // 
             btnMultiplicacao.BackColor = Color.DodgerBlue;
+            btnMultiplicacao.Cursor = Cursors.Hand;
             btnMultiplicacao.FlatStyle = FlatStyle.Popup;
             btnMultiplicacao.Font = new Font("Courier New", 15.75F, FontStyle.Bold);
             btnMultiplicacao.ForeColor = Color.White;
-            btnMultiplicacao.Location = new Point(285, 215);
+            btnMultiplicacao.Location = new Point(405, 296);
+            btnMultiplicacao.Margin = new Padding(3, 4, 3, 4);
             btnMultiplicacao.Name = "btnMultiplicacao";
-            btnMultiplicacao.Size = new Size(85, 85);
+            btnMultiplicacao.Size = new Size(125, 125);
             btnMultiplicacao.TabIndex = 19;
             btnMultiplicacao.Text = "X";
             btnMultiplicacao.UseVisualStyleBackColor = false;
@@ -246,12 +288,16 @@
             // btnTres
             // 
             btnTres.BackColor = Color.Gray;
+            btnTres.BackgroundImage = Properties.Resources.jotaro1;
+            btnTres.BackgroundImageLayout = ImageLayout.Stretch;
+            btnTres.Cursor = Cursors.Hand;
             btnTres.FlatStyle = FlatStyle.Popup;
-            btnTres.Font = new Font("Courier New", 15.75F);
+            btnTres.Font = new Font("Wide Latin", 19.8000011F);
             btnTres.ForeColor = Color.White;
-            btnTres.Location = new Point(194, 215);
+            btnTres.Location = new Point(274, 296);
+            btnTres.Margin = new Padding(3, 4, 3, 4);
             btnTres.Name = "btnTres";
-            btnTres.Size = new Size(85, 85);
+            btnTres.Size = new Size(125, 125);
             btnTres.TabIndex = 18;
             btnTres.Text = "3";
             btnTres.UseVisualStyleBackColor = false;
@@ -259,12 +305,16 @@
             // btnDois
             // 
             btnDois.BackColor = Color.Gray;
+            btnDois.BackgroundImage = Properties.Resources.joseph;
+            btnDois.BackgroundImageLayout = ImageLayout.Stretch;
+            btnDois.Cursor = Cursors.Hand;
             btnDois.FlatStyle = FlatStyle.Popup;
-            btnDois.Font = new Font("Courier New", 15.75F);
-            btnDois.ForeColor = Color.White;
-            btnDois.Location = new Point(103, 215);
+            btnDois.Font = new Font("Wide Latin", 19.8000011F);
+            btnDois.ForeColor = Color.FromArgb(245, 15, 89);
+            btnDois.Location = new Point(143, 295);
+            btnDois.Margin = new Padding(3, 4, 3, 4);
             btnDois.Name = "btnDois";
-            btnDois.Size = new Size(85, 85);
+            btnDois.Size = new Size(125, 125);
             btnDois.TabIndex = 17;
             btnDois.Text = "2";
             btnDois.UseVisualStyleBackColor = false;
@@ -272,12 +322,16 @@
             // btnUm
             // 
             btnUm.BackColor = Color.Gray;
+            btnUm.BackgroundImage = Properties.Resources.dio1;
+            btnUm.BackgroundImageLayout = ImageLayout.Stretch;
+            btnUm.Cursor = Cursors.Hand;
             btnUm.FlatStyle = FlatStyle.Popup;
-            btnUm.Font = new Font("Courier New", 15.75F);
+            btnUm.Font = new Font("Wide Latin", 19.8000011F);
             btnUm.ForeColor = Color.White;
-            btnUm.Location = new Point(12, 215);
+            btnUm.Location = new Point(12, 296);
+            btnUm.Margin = new Padding(3, 4, 3, 4);
             btnUm.Name = "btnUm";
-            btnUm.Size = new Size(85, 85);
+            btnUm.Size = new Size(125, 125);
             btnUm.TabIndex = 16;
             btnUm.Text = "1";
             btnUm.UseVisualStyleBackColor = false;
@@ -285,22 +339,24 @@
             // btnApagar
             // 
             btnApagar.BackColor = Color.Orange;
+            btnApagar.Cursor = Cursors.Hand;
             btnApagar.FlatStyle = FlatStyle.Popup;
             btnApagar.Font = new Font("Courier New", 15.75F, FontStyle.Bold);
             btnApagar.ForeColor = Color.White;
-            btnApagar.Location = new Point(285, 489);
+            btnApagar.Location = new Point(405, 694);
+            btnApagar.Margin = new Padding(3, 4, 3, 4);
             btnApagar.Name = "btnApagar";
-            btnApagar.Size = new Size(85, 85);
+            btnApagar.Size = new Size(125, 125);
             btnApagar.TabIndex = 24;
             btnApagar.Text = "CLS";
             btnApagar.UseVisualStyleBackColor = false;
             // 
             // frmPrincipal
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Black;
-            ClientSize = new Size(384, 590);
+            BackColor = SystemColors.Control;
+            ClientSize = new Size(547, 828);
             Controls.Add(btnApagar);
             Controls.Add(btnDivisao);
             Controls.Add(btnMultiplicacao);
@@ -321,10 +377,12 @@
             Controls.Add(btnTrocaDeSinal);
             Controls.Add(lblResultado);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             Name = "frmPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Calculadora Ora Ora...";
+            FormClosed += frmPrincipal_FormClosed;
             ResumeLayout(false);
         }
 
