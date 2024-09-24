@@ -51,13 +51,13 @@
             // 
             // lblResultado
             // 
-            lblResultado.BackColor = Color.White;
-            lblResultado.BorderStyle = BorderStyle.FixedSingle;
+            lblResultado.BackColor = Color.Transparent;
             lblResultado.FlatStyle = FlatStyle.Popup;
             lblResultado.Font = new Font("Simplex_IV25", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblResultado.Location = new Point(14, 12);
+            lblResultado.ForeColor = Color.White;
+            lblResultado.Location = new Point(10, 12);
             lblResultado.Name = "lblResultado";
-            lblResultado.Size = new Size(516, 133);
+            lblResultado.Size = new Size(520, 133);
             lblResultado.TabIndex = 0;
             lblResultado.TextAlign = ContentAlignment.MiddleRight;
             // 
@@ -80,6 +80,7 @@
             // btnZero
             // 
             btnZero.BackColor = Color.Gray;
+            btnZero.BackgroundImage = Properties.Resources.pucci;
             btnZero.BackgroundImageLayout = ImageLayout.Stretch;
             btnZero.Cursor = Cursors.Hand;
             btnZero.FlatStyle = FlatStyle.Popup;
@@ -112,7 +113,7 @@
             // 
             // btnIgual
             // 
-            btnIgual.BackColor = Color.Orange;
+            btnIgual.BackColor = Color.LimeGreen;
             btnIgual.Cursor = Cursors.Hand;
             btnIgual.FlatStyle = FlatStyle.Popup;
             btnIgual.Font = new Font("Courier New", 19.8000011F, FontStyle.Bold);
@@ -145,6 +146,7 @@
             // btnNove
             // 
             btnNove.BackColor = Color.Gray;
+            btnNove.BackgroundImage = Properties.Resources.johnny;
             btnNove.BackgroundImageLayout = ImageLayout.Stretch;
             btnNove.Cursor = Cursors.Hand;
             btnNove.FlatStyle = FlatStyle.Popup;
@@ -162,6 +164,7 @@
             // btnOito
             // 
             btnOito.BackColor = Color.Gray;
+            btnOito.BackgroundImage = Properties.Resources.giorno;
             btnOito.BackgroundImageLayout = ImageLayout.Stretch;
             btnOito.Cursor = Cursors.Hand;
             btnOito.FlatStyle = FlatStyle.Popup;
@@ -179,6 +182,7 @@
             // btnSete
             // 
             btnSete.BackColor = Color.Gray;
+            btnSete.BackgroundImage = Properties.Resources.gyro;
             btnSete.BackgroundImageLayout = ImageLayout.Stretch;
             btnSete.Cursor = Cursors.Hand;
             btnSete.FlatStyle = FlatStyle.Popup;
@@ -212,6 +216,7 @@
             // btnSeis
             // 
             btnSeis.BackColor = Color.Gray;
+            btnSeis.BackgroundImage = Properties.Resources.kira;
             btnSeis.BackgroundImageLayout = ImageLayout.Stretch;
             btnSeis.Cursor = Cursors.Hand;
             btnSeis.FlatStyle = FlatStyle.Popup;
@@ -229,6 +234,7 @@
             // btnCinco
             // 
             btnCinco.BackColor = Color.Gray;
+            btnCinco.BackgroundImage = Properties.Resources.diavolo;
             btnCinco.BackgroundImageLayout = ImageLayout.Stretch;
             btnCinco.Cursor = Cursors.Hand;
             btnCinco.FlatStyle = FlatStyle.Popup;
@@ -246,6 +252,7 @@
             // btnQuatro
             // 
             btnQuatro.BackColor = Color.Gray;
+            btnQuatro.BackgroundImage = Properties.Resources.mista;
             btnQuatro.BackgroundImageLayout = ImageLayout.Stretch;
             btnQuatro.Cursor = Cursors.Hand;
             btnQuatro.FlatStyle = FlatStyle.Popup;
@@ -295,6 +302,7 @@
             // btnTres
             // 
             btnTres.BackColor = Color.Gray;
+            btnTres.BackgroundImage = Properties.Resources.jotaro1;
             btnTres.BackgroundImageLayout = ImageLayout.Stretch;
             btnTres.Cursor = Cursors.Hand;
             btnTres.FlatStyle = FlatStyle.Popup;
@@ -312,6 +320,7 @@
             // btnDois
             // 
             btnDois.BackColor = Color.Gray;
+            btnDois.BackgroundImage = Properties.Resources.joseph;
             btnDois.BackgroundImageLayout = ImageLayout.Stretch;
             btnDois.Cursor = Cursors.Hand;
             btnDois.FlatStyle = FlatStyle.Popup;
@@ -329,6 +338,7 @@
             // btnUm
             // 
             btnUm.BackColor = Color.Gray;
+            btnUm.BackgroundImage = Properties.Resources.dio1;
             btnUm.BackgroundImageLayout = ImageLayout.Stretch;
             btnUm.Cursor = Cursors.Hand;
             btnUm.FlatStyle = FlatStyle.Popup;
@@ -345,7 +355,7 @@
             // 
             // btnApagar
             // 
-            btnApagar.BackColor = Color.Orange;
+            btnApagar.BackColor = Color.LimeGreen;
             btnApagar.Cursor = Cursors.Hand;
             btnApagar.FlatStyle = FlatStyle.Popup;
             btnApagar.Font = new Font("Courier New", 19.8000011F, FontStyle.Bold);
@@ -363,7 +373,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.Control;
+            BackColor = Color.Orange;
             ClientSize = new Size(547, 828);
             Controls.Add(btnApagar);
             Controls.Add(btnDivisao);
