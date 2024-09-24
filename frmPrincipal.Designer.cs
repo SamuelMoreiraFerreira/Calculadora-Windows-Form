@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             lblResultado = new Label();
-            btnTrocaDeSinal = new Button();
+            btnPorcentagem = new Button();
             btnZero = new Button();
             btnVirgula = new Button();
             btnIgual = new Button();
@@ -61,20 +61,21 @@
             lblResultado.TabIndex = 0;
             lblResultado.TextAlign = ContentAlignment.MiddleRight;
             // 
-            // btnTrocaDeSinal
+            // btnPorcentagem
             // 
-            btnTrocaDeSinal.BackColor = Color.DodgerBlue;
-            btnTrocaDeSinal.Cursor = Cursors.Hand;
-            btnTrocaDeSinal.FlatStyle = FlatStyle.Popup;
-            btnTrocaDeSinal.Font = new Font("Courier New", 15.75F, FontStyle.Bold);
-            btnTrocaDeSinal.ForeColor = Color.White;
-            btnTrocaDeSinal.Location = new Point(12, 163);
-            btnTrocaDeSinal.Margin = new Padding(3, 4, 3, 4);
-            btnTrocaDeSinal.Name = "btnTrocaDeSinal";
-            btnTrocaDeSinal.Size = new Size(125, 125);
-            btnTrocaDeSinal.TabIndex = 4;
-            btnTrocaDeSinal.Text = "+/-";
-            btnTrocaDeSinal.UseVisualStyleBackColor = false;
+            btnPorcentagem.BackColor = Color.DodgerBlue;
+            btnPorcentagem.Cursor = Cursors.Hand;
+            btnPorcentagem.FlatStyle = FlatStyle.Popup;
+            btnPorcentagem.Font = new Font("Courier New", 15.75F, FontStyle.Bold);
+            btnPorcentagem.ForeColor = Color.White;
+            btnPorcentagem.Location = new Point(12, 163);
+            btnPorcentagem.Margin = new Padding(3, 4, 3, 4);
+            btnPorcentagem.Name = "btnPorcentagem";
+            btnPorcentagem.Size = new Size(125, 125);
+            btnPorcentagem.TabIndex = 4;
+            btnPorcentagem.Text = "%";
+            btnPorcentagem.UseVisualStyleBackColor = false;
+            btnPorcentagem.Click += Button_Click;
             // 
             // btnZero
             // 
@@ -92,6 +93,7 @@
             btnZero.TabIndex = 5;
             btnZero.Text = "0";
             btnZero.UseVisualStyleBackColor = false;
+            btnZero.Click += Button_Click;
             // 
             // btnVirgula
             // 
@@ -107,6 +109,7 @@
             btnVirgula.TabIndex = 6;
             btnVirgula.Text = ",";
             btnVirgula.UseVisualStyleBackColor = false;
+            btnVirgula.Click += Button_Click;
             // 
             // btnIgual
             // 
@@ -122,6 +125,7 @@
             btnIgual.TabIndex = 7;
             btnIgual.Text = "=";
             btnIgual.UseVisualStyleBackColor = false;
+            btnIgual.Click += btnIgual_Click;
             // 
             // btnSoma
             // 
@@ -137,6 +141,7 @@
             btnSoma.TabIndex = 11;
             btnSoma.Text = "+";
             btnSoma.UseVisualStyleBackColor = false;
+            btnSoma.Click += Button_Click;
             // 
             // btnNove
             // 
@@ -154,6 +159,7 @@
             btnNove.TabIndex = 10;
             btnNove.Text = "9";
             btnNove.UseVisualStyleBackColor = false;
+            btnNove.Click += Button_Click;
             // 
             // btnOito
             // 
@@ -171,6 +177,7 @@
             btnOito.TabIndex = 9;
             btnOito.Text = "8";
             btnOito.UseVisualStyleBackColor = false;
+            btnOito.Click += Button_Click;
             // 
             // btnSete
             // 
@@ -188,6 +195,7 @@
             btnSete.TabIndex = 8;
             btnSete.Text = "7";
             btnSete.UseVisualStyleBackColor = false;
+            btnSete.Click += Button_Click;
             // 
             // btnSubtracao
             // 
@@ -203,6 +211,7 @@
             btnSubtracao.TabIndex = 15;
             btnSubtracao.Text = "-";
             btnSubtracao.UseVisualStyleBackColor = false;
+            btnSubtracao.Click += Button_Click;
             // 
             // btnSeis
             // 
@@ -220,6 +229,7 @@
             btnSeis.TabIndex = 14;
             btnSeis.Text = "6";
             btnSeis.UseVisualStyleBackColor = false;
+            btnSeis.Click += Button_Click;
             // 
             // btnCinco
             // 
@@ -237,6 +247,7 @@
             btnCinco.TabIndex = 13;
             btnCinco.Text = "5";
             btnCinco.UseVisualStyleBackColor = false;
+            btnCinco.Click += Button_Click;
             // 
             // btnQuatro
             // 
@@ -254,6 +265,7 @@
             btnQuatro.TabIndex = 12;
             btnQuatro.Text = "4";
             btnQuatro.UseVisualStyleBackColor = false;
+            btnQuatro.Click += Button_Click;
             // 
             // btnDivisao
             // 
@@ -269,6 +281,7 @@
             btnDivisao.TabIndex = 23;
             btnDivisao.Text = "/";
             btnDivisao.UseVisualStyleBackColor = false;
+            btnDivisao.Click += Button_Click;
             // 
             // btnMultiplicacao
             // 
@@ -284,6 +297,7 @@
             btnMultiplicacao.TabIndex = 19;
             btnMultiplicacao.Text = "X";
             btnMultiplicacao.UseVisualStyleBackColor = false;
+            btnMultiplicacao.Click += Button_Click;
             // 
             // btnTres
             // 
@@ -301,6 +315,7 @@
             btnTres.TabIndex = 18;
             btnTres.Text = "3";
             btnTres.UseVisualStyleBackColor = false;
+            btnTres.Click += Button_Click;
             // 
             // btnDois
             // 
@@ -318,6 +333,7 @@
             btnDois.TabIndex = 17;
             btnDois.Text = "2";
             btnDois.UseVisualStyleBackColor = false;
+            btnDois.Click += Button_Click;
             // 
             // btnUm
             // 
@@ -335,6 +351,7 @@
             btnUm.TabIndex = 16;
             btnUm.Text = "1";
             btnUm.UseVisualStyleBackColor = false;
+            btnUm.Click += Button_Click;
             // 
             // btnApagar
             // 
@@ -350,6 +367,7 @@
             btnApagar.TabIndex = 24;
             btnApagar.Text = "CLS";
             btnApagar.UseVisualStyleBackColor = false;
+            btnApagar.Click += btnApagar_Click;
             // 
             // frmPrincipal
             // 
@@ -374,7 +392,7 @@
             Controls.Add(btnIgual);
             Controls.Add(btnVirgula);
             Controls.Add(btnZero);
-            Controls.Add(btnTrocaDeSinal);
+            Controls.Add(btnPorcentagem);
             Controls.Add(lblResultado);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(3, 4, 3, 4);
@@ -389,7 +407,7 @@
         #endregion
 
         private Label lblResultado;
-        private Button btnTrocaDeSinal;
+        private Button btnPorcentagem;
         private Button btnZero;
         private Button btnVirgula;
         private Button btnIgual;

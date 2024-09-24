@@ -12,9 +12,11 @@ namespace Calculadora
 {
     public partial class frmPrincipal : Form
     {
+
         public frmPrincipal()
         {
             InitializeComponent();
         }
+
     }
 }
