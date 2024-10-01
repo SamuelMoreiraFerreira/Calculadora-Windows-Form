@@ -47,6 +47,9 @@
             btnDois = new Button();
             btnUm = new Button();
             btnApagar = new Button();
+            mspMenu = new MenuStrip();
+            sitemMedidas = new ToolStripMenuItem();
+            mspMenu.SuspendLayout();
             SuspendLayout();
             // 
             // lblResultado
@@ -55,9 +58,9 @@
             lblResultado.FlatStyle = FlatStyle.Popup;
             lblResultado.Font = new Font("Simplex_IV25", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblResultado.ForeColor = Color.White;
-            lblResultado.Location = new Point(10, 12);
+            lblResultado.Location = new Point(12, 35);
             lblResultado.Name = "lblResultado";
-            lblResultado.Size = new Size(520, 133);
+            lblResultado.Size = new Size(455, 100);
             lblResultado.TabIndex = 0;
             lblResultado.TextAlign = ContentAlignment.MiddleRight;
             // 
@@ -68,10 +71,9 @@
             btnPorcentagem.FlatStyle = FlatStyle.Popup;
             btnPorcentagem.Font = new Font("Courier New", 19.8000011F, FontStyle.Bold);
             btnPorcentagem.ForeColor = Color.White;
-            btnPorcentagem.Location = new Point(12, 163);
-            btnPorcentagem.Margin = new Padding(3, 4, 3, 4);
+            btnPorcentagem.Location = new Point(13, 148);
             btnPorcentagem.Name = "btnPorcentagem";
-            btnPorcentagem.Size = new Size(125, 125);
+            btnPorcentagem.Size = new Size(109, 94);
             btnPorcentagem.TabIndex = 4;
             btnPorcentagem.Text = "%";
             btnPorcentagem.UseVisualStyleBackColor = false;
@@ -86,10 +88,9 @@
             btnZero.FlatStyle = FlatStyle.Popup;
             btnZero.Font = new Font("Courier New", 19.8000011F, FontStyle.Bold);
             btnZero.ForeColor = Color.White;
-            btnZero.Location = new Point(143, 163);
-            btnZero.Margin = new Padding(3, 4, 3, 4);
+            btnZero.Location = new Point(128, 148);
             btnZero.Name = "btnZero";
-            btnZero.Size = new Size(125, 125);
+            btnZero.Size = new Size(109, 94);
             btnZero.TabIndex = 5;
             btnZero.Text = "0";
             btnZero.UseVisualStyleBackColor = false;
@@ -102,10 +103,9 @@
             btnVirgula.FlatStyle = FlatStyle.Popup;
             btnVirgula.Font = new Font("Courier New", 19.8000011F, FontStyle.Bold);
             btnVirgula.ForeColor = Color.White;
-            btnVirgula.Location = new Point(274, 163);
-            btnVirgula.Margin = new Padding(3, 4, 3, 4);
+            btnVirgula.Location = new Point(243, 148);
             btnVirgula.Name = "btnVirgula";
-            btnVirgula.Size = new Size(125, 125);
+            btnVirgula.Size = new Size(109, 94);
             btnVirgula.TabIndex = 6;
             btnVirgula.Text = ",";
             btnVirgula.UseVisualStyleBackColor = false;
@@ -118,10 +118,9 @@
             btnIgual.FlatStyle = FlatStyle.Popup;
             btnIgual.Font = new Font("Courier New", 19.8000011F, FontStyle.Bold);
             btnIgual.ForeColor = Color.White;
-            btnIgual.Location = new Point(10, 694);
-            btnIgual.Margin = new Padding(3, 4, 3, 4);
+            btnIgual.Location = new Point(12, 546);
             btnIgual.Name = "btnIgual";
-            btnIgual.Size = new Size(389, 125);
+            btnIgual.Size = new Size(340, 94);
             btnIgual.TabIndex = 7;
             btnIgual.Text = "=";
             btnIgual.UseVisualStyleBackColor = false;
@@ -134,10 +133,9 @@
             btnSoma.FlatStyle = FlatStyle.Popup;
             btnSoma.Font = new Font("Courier New", 19.8000011F, FontStyle.Bold);
             btnSoma.ForeColor = Color.White;
-            btnSoma.Location = new Point(405, 561);
-            btnSoma.Margin = new Padding(3, 4, 3, 4);
+            btnSoma.Location = new Point(357, 447);
             btnSoma.Name = "btnSoma";
-            btnSoma.Size = new Size(125, 125);
+            btnSoma.Size = new Size(109, 94);
             btnSoma.TabIndex = 11;
             btnSoma.Text = "+";
             btnSoma.UseVisualStyleBackColor = false;
@@ -152,10 +150,9 @@
             btnNove.FlatStyle = FlatStyle.Popup;
             btnNove.Font = new Font("Courier New", 19.8000011F, FontStyle.Bold);
             btnNove.ForeColor = Color.White;
-            btnNove.Location = new Point(274, 562);
-            btnNove.Margin = new Padding(3, 4, 3, 4);
+            btnNove.Location = new Point(243, 448);
             btnNove.Name = "btnNove";
-            btnNove.Size = new Size(125, 125);
+            btnNove.Size = new Size(109, 94);
             btnNove.TabIndex = 10;
             btnNove.Text = "9";
             btnNove.UseVisualStyleBackColor = false;
@@ -170,10 +167,9 @@
             btnOito.FlatStyle = FlatStyle.Popup;
             btnOito.Font = new Font("Courier New", 19.8000011F, FontStyle.Bold);
             btnOito.ForeColor = Color.White;
-            btnOito.Location = new Point(143, 561);
-            btnOito.Margin = new Padding(3, 4, 3, 4);
+            btnOito.Location = new Point(128, 447);
             btnOito.Name = "btnOito";
-            btnOito.Size = new Size(125, 125);
+            btnOito.Size = new Size(109, 94);
             btnOito.TabIndex = 9;
             btnOito.Text = "8";
             btnOito.UseVisualStyleBackColor = false;
@@ -188,10 +184,9 @@
             btnSete.FlatStyle = FlatStyle.Popup;
             btnSete.Font = new Font("Courier New", 19.8000011F, FontStyle.Bold);
             btnSete.ForeColor = Color.White;
-            btnSete.Location = new Point(12, 562);
-            btnSete.Margin = new Padding(3, 4, 3, 4);
+            btnSete.Location = new Point(13, 448);
             btnSete.Name = "btnSete";
-            btnSete.Size = new Size(125, 125);
+            btnSete.Size = new Size(109, 94);
             btnSete.TabIndex = 8;
             btnSete.Text = "7";
             btnSete.UseVisualStyleBackColor = false;
@@ -204,10 +199,9 @@
             btnSubtracao.FlatStyle = FlatStyle.Popup;
             btnSubtracao.Font = new Font("Courier New", 19.8000011F, FontStyle.Bold);
             btnSubtracao.ForeColor = Color.White;
-            btnSubtracao.Location = new Point(405, 428);
-            btnSubtracao.Margin = new Padding(3, 4, 3, 4);
+            btnSubtracao.Location = new Point(357, 347);
             btnSubtracao.Name = "btnSubtracao";
-            btnSubtracao.Size = new Size(125, 125);
+            btnSubtracao.Size = new Size(109, 94);
             btnSubtracao.TabIndex = 15;
             btnSubtracao.Text = "-";
             btnSubtracao.UseVisualStyleBackColor = false;
@@ -222,10 +216,9 @@
             btnSeis.FlatStyle = FlatStyle.Popup;
             btnSeis.Font = new Font("Courier New", 19.8000011F, FontStyle.Bold);
             btnSeis.ForeColor = Color.White;
-            btnSeis.Location = new Point(274, 428);
-            btnSeis.Margin = new Padding(3, 4, 3, 4);
+            btnSeis.Location = new Point(243, 347);
             btnSeis.Name = "btnSeis";
-            btnSeis.Size = new Size(125, 125);
+            btnSeis.Size = new Size(109, 94);
             btnSeis.TabIndex = 14;
             btnSeis.Text = "6";
             btnSeis.UseVisualStyleBackColor = false;
@@ -240,10 +233,9 @@
             btnCinco.FlatStyle = FlatStyle.Popup;
             btnCinco.Font = new Font("Courier New", 19.8000011F, FontStyle.Bold);
             btnCinco.ForeColor = Color.White;
-            btnCinco.Location = new Point(143, 428);
-            btnCinco.Margin = new Padding(3, 4, 3, 4);
+            btnCinco.Location = new Point(128, 347);
             btnCinco.Name = "btnCinco";
-            btnCinco.Size = new Size(125, 125);
+            btnCinco.Size = new Size(109, 94);
             btnCinco.TabIndex = 13;
             btnCinco.Text = "5";
             btnCinco.UseVisualStyleBackColor = false;
@@ -258,10 +250,9 @@
             btnQuatro.FlatStyle = FlatStyle.Popup;
             btnQuatro.Font = new Font("Courier New", 19.8000011F, FontStyle.Bold);
             btnQuatro.ForeColor = Color.White;
-            btnQuatro.Location = new Point(12, 429);
-            btnQuatro.Margin = new Padding(3, 4, 3, 4);
+            btnQuatro.Location = new Point(13, 348);
             btnQuatro.Name = "btnQuatro";
-            btnQuatro.Size = new Size(125, 125);
+            btnQuatro.Size = new Size(109, 94);
             btnQuatro.TabIndex = 12;
             btnQuatro.Text = "4";
             btnQuatro.UseVisualStyleBackColor = false;
@@ -274,10 +265,9 @@
             btnDivisao.FlatStyle = FlatStyle.Popup;
             btnDivisao.Font = new Font("Courier New", 19.8000011F, FontStyle.Bold);
             btnDivisao.ForeColor = Color.White;
-            btnDivisao.Location = new Point(405, 163);
-            btnDivisao.Margin = new Padding(3, 4, 3, 4);
+            btnDivisao.Location = new Point(357, 148);
             btnDivisao.Name = "btnDivisao";
-            btnDivisao.Size = new Size(125, 125);
+            btnDivisao.Size = new Size(109, 94);
             btnDivisao.TabIndex = 23;
             btnDivisao.Text = "/";
             btnDivisao.UseVisualStyleBackColor = false;
@@ -290,10 +280,9 @@
             btnMultiplicacao.FlatStyle = FlatStyle.Popup;
             btnMultiplicacao.Font = new Font("Courier New", 19.8000011F, FontStyle.Bold);
             btnMultiplicacao.ForeColor = Color.White;
-            btnMultiplicacao.Location = new Point(405, 296);
-            btnMultiplicacao.Margin = new Padding(3, 4, 3, 4);
+            btnMultiplicacao.Location = new Point(357, 248);
             btnMultiplicacao.Name = "btnMultiplicacao";
-            btnMultiplicacao.Size = new Size(125, 125);
+            btnMultiplicacao.Size = new Size(109, 94);
             btnMultiplicacao.TabIndex = 19;
             btnMultiplicacao.Text = "X";
             btnMultiplicacao.UseVisualStyleBackColor = false;
@@ -308,10 +297,9 @@
             btnTres.FlatStyle = FlatStyle.Popup;
             btnTres.Font = new Font("Courier New", 19.8000011F, FontStyle.Bold);
             btnTres.ForeColor = Color.White;
-            btnTres.Location = new Point(274, 296);
-            btnTres.Margin = new Padding(3, 4, 3, 4);
+            btnTres.Location = new Point(243, 248);
             btnTres.Name = "btnTres";
-            btnTres.Size = new Size(125, 125);
+            btnTres.Size = new Size(109, 94);
             btnTres.TabIndex = 18;
             btnTres.Text = "3";
             btnTres.UseVisualStyleBackColor = false;
@@ -326,10 +314,9 @@
             btnDois.FlatStyle = FlatStyle.Popup;
             btnDois.Font = new Font("Courier New", 19.8000011F, FontStyle.Bold);
             btnDois.ForeColor = Color.White;
-            btnDois.Location = new Point(143, 295);
-            btnDois.Margin = new Padding(3, 4, 3, 4);
+            btnDois.Location = new Point(128, 247);
             btnDois.Name = "btnDois";
-            btnDois.Size = new Size(125, 125);
+            btnDois.Size = new Size(109, 94);
             btnDois.TabIndex = 17;
             btnDois.Text = "2";
             btnDois.UseVisualStyleBackColor = false;
@@ -344,10 +331,9 @@
             btnUm.FlatStyle = FlatStyle.Popup;
             btnUm.Font = new Font("Courier New", 19.8000011F, FontStyle.Bold);
             btnUm.ForeColor = Color.White;
-            btnUm.Location = new Point(12, 296);
-            btnUm.Margin = new Padding(3, 4, 3, 4);
+            btnUm.Location = new Point(13, 248);
             btnUm.Name = "btnUm";
-            btnUm.Size = new Size(125, 125);
+            btnUm.Size = new Size(109, 94);
             btnUm.TabIndex = 16;
             btnUm.Text = "1";
             btnUm.UseVisualStyleBackColor = false;
@@ -360,21 +346,36 @@
             btnApagar.FlatStyle = FlatStyle.Popup;
             btnApagar.Font = new Font("Courier New", 19.8000011F, FontStyle.Bold);
             btnApagar.ForeColor = Color.White;
-            btnApagar.Location = new Point(405, 694);
-            btnApagar.Margin = new Padding(3, 4, 3, 4);
+            btnApagar.Location = new Point(357, 546);
             btnApagar.Name = "btnApagar";
-            btnApagar.Size = new Size(125, 125);
+            btnApagar.Size = new Size(109, 94);
             btnApagar.TabIndex = 24;
             btnApagar.Text = "CLS";
             btnApagar.UseVisualStyleBackColor = false;
             btnApagar.Click += btnApagar_Click;
             // 
+            // mspMenu
+            // 
+            mspMenu.Items.AddRange(new ToolStripItem[] { sitemMedidas });
+            mspMenu.Location = new Point(0, 0);
+            mspMenu.Name = "mspMenu";
+            mspMenu.Size = new Size(479, 24);
+            mspMenu.TabIndex = 25;
+            mspMenu.Text = "menuStrip1";
+            // 
+            // sitemMedidas
+            // 
+            sitemMedidas.Name = "sitemMedidas";
+            sitemMedidas.Size = new Size(64, 20);
+            sitemMedidas.Text = "Medidas";
+            sitemMedidas.Click += sitemMedidas_Click;
+            // 
             // frmPrincipal
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Orange;
-            ClientSize = new Size(547, 828);
+            ClientSize = new Size(479, 647);
             Controls.Add(btnApagar);
             Controls.Add(btnDivisao);
             Controls.Add(btnMultiplicacao);
@@ -394,14 +395,18 @@
             Controls.Add(btnZero);
             Controls.Add(btnPorcentagem);
             Controls.Add(lblResultado);
+            Controls.Add(mspMenu);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Margin = new Padding(3, 4, 3, 4);
+            MainMenuStrip = mspMenu;
             MaximizeBox = false;
             Name = "frmPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Calculadora Ora Ora...";
             FormClosed += frmPrincipal_FormClosed;
+            mspMenu.ResumeLayout(false);
+            mspMenu.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -425,5 +430,7 @@
         private Button btnDois;
         private Button btnUm;
         private Button btnApagar;
+        private MenuStrip mspMenu;
+        private ToolStripMenuItem sitemMedidas;
     }
 }

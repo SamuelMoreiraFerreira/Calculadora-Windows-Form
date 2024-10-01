@@ -13,6 +13,8 @@ namespace Calculadora
     public partial class frmPrincipal : Form
     {
 
+        private frmMedidas screenMedidas = new frmMedidas();
+
         readonly DataTable table = new DataTable();
         readonly Dictionary<string, string> map = new Dictionary<string, string>()
         {
@@ -89,6 +91,12 @@ namespace Calculadora
                     this.UpdateEquacao(this.map[btn.Name]);
                 }
             }
+        }
+
+        private void sitemMedidas_Click(object sender, EventArgs e)
+        {
+            // Abrir o form de Medidas
+            screenMedidas.ShowDialog();
         }
     }
 }
