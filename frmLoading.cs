@@ -2,6 +2,10 @@ namespace Calculadora
 {
     public partial class frmLoading : Form
     {
+
+        public int maxDelay = 30;
+        public int minDelay = 5;
+
         public frmLoading()
         {
             InitializeComponent();
@@ -12,7 +16,7 @@ namespace Calculadora
             Random rng = new Random();
 
             // Randomiza o tempo de carregamento
-            pgbCarregamento.Maximum = rng.Next(5, 30);
+            pgbCarregamento.Maximum = rng.Next(this.minDelay, this.maxDelay);
 
             tmrCarregamento.Enabled = true;
         }
@@ -24,11 +28,7 @@ namespace Calculadora
                 tmrCarregamento.Enabled = false;
 
                 // Fecha a tela atual
-                this.Hide();
-
-                // Abre a tela da calculadora
-                frmPrincipal screen = new frmPrincipal();
-                screen.Show();
+                this.Close();
             }
 
             else

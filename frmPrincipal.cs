@@ -42,10 +42,25 @@ namespace Calculadora
         {
             InitializeComponent();
         }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+            // Esconde a tela atual
+            this.Hide();
+
+            frmLoading splash = new frmLoading();
+
+            // Espera o loading acabar
+            splash.ShowDialog();
+
+            // Mostra a tela atual
+            this.Show();
+        }
+
         private void frmPrincipal_FormClosed(object sender, FormClosedEventArgs e)
         {
-            // Finaliza todos os processos do Aplicativo
-            Application.Exit();
+            // Finaliza o aplicativo.
+            this.Close();
         }
 
         private void btnApagar_Click(object sender, EventArgs e)

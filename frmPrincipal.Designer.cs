@@ -403,6 +403,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Calculadora Ora Ora...";
             FormClosed += frmPrincipal_FormClosed;
+            Load += frmPrincipal_Load;
             mspMenu.ResumeLayout(false);
             mspMenu.PerformLayout();
             ResumeLayout(false);

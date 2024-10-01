@@ -16,5 +16,20 @@ namespace Calculadora
         {
             InitializeComponent();
         }
+
+        private void frmMedidas_Load(object sender, EventArgs e)
+        {
+            // Esconde a tela atual
+            this.Hide();
+
+            frmLoading splash = new frmLoading();
+            splash.maxDelay = 15;
+
+            // Espera o loading acabar
+            splash.ShowDialog();
+
+            // Mostra a tela atual
+            this.Show();
+        }
     }
 }

@@ -28,12 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "frmMedidas";
+            tbxCelsius = new TextBox();
+            tbxFahrenheit = new TextBox();
+            SuspendLayout();
+            // 
+            // tbxCelsius
+            // 
+            tbxCelsius.Location = new Point(12, 42);
+            tbxCelsius.Name = "tbxCelsius";
+            tbxCelsius.Size = new Size(100, 23);
+            tbxCelsius.TabIndex = 0;
+            // 
+            // tbxFahrenheit
+            // 
+            tbxFahrenheit.Location = new Point(194, 42);
+            tbxFahrenheit.Name = "tbxFahrenheit";
+            tbxFahrenheit.Size = new Size(100, 23);
+            tbxFahrenheit.TabIndex = 1;
+            // 
+            // frmMedidas
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(tbxFahrenheit);
+            Controls.Add(tbxCelsius);
+            Name = "frmMedidas";
+            Text = "frmMedidas";
+            Load += frmMedidas_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox tbxCelsius;
+        private TextBox tbxFahrenheit;
     }
 }
