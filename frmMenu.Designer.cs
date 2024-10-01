@@ -29,32 +29,48 @@
         private void InitializeComponent()
         {
             btnCalculadora = new Button();
+            btnMedidas = new Button();
             SuspendLayout();
             // 
             // btnCalculadora
             // 
-            btnCalculadora.Location = new Point(503, 144);
+            btnCalculadora.Location = new Point(440, 108);
+            btnCalculadora.Margin = new Padding(3, 2, 3, 2);
             btnCalculadora.Name = "btnCalculadora";
-            btnCalculadora.Size = new Size(129, 29);
+            btnCalculadora.Size = new Size(113, 22);
             btnCalculadora.TabIndex = 0;
             btnCalculadora.Text = "Calculadora";
             btnCalculadora.UseVisualStyleBackColor = true;
             btnCalculadora.Click += btnCalculadora_Click;
             // 
+            // btnMedidas
+            // 
+            btnMedidas.Location = new Point(294, 158);
+            btnMedidas.Margin = new Padding(3, 2, 3, 2);
+            btnMedidas.Name = "btnMedidas";
+            btnMedidas.Size = new Size(113, 22);
+            btnMedidas.TabIndex = 1;
+            btnMedidas.Text = "Medidas";
+            btnMedidas.UseVisualStyleBackColor = true;
+            btnMedidas.Click += btnMedidas_Click;
+            // 
             // frmMenu
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(700, 338);
+            Controls.Add(btnMedidas);
             Controls.Add(btnCalculadora);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "frmMenu";
             Text = "frmMenu";
-            Load += frmMenu_Load;
+            FormClosed += frmMenu_FormClosed;
             ResumeLayout(false);
         }
 
         #endregion
 
         private Button btnCalculadora;
+        private Button btnMedidas;
     }
 }

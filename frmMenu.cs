@@ -13,14 +13,15 @@ namespace Calculadora
     public partial class frmMenu : Form
     {
 
-        private frmCalculadora calculadora = new frmCalculadora();
+        private frmCalculadora screenCalculadora = new frmCalculadora();
+        private frmMedidas screenMedidas = new frmMedidas();
 
         public frmMenu()
         {
             InitializeComponent();
         }
 
-        private void frmMenu_Load(object sender, EventArgs e)
+        private void frmMenu_FormClosed(object sender, FormClosedEventArgs e)
         {
             // Finaliza todos os processos do Aplicativo
             Application.Exit();
@@ -28,7 +29,12 @@ namespace Calculadora
 
         private void btnCalculadora_Click(object sender, EventArgs e)
         {
-            calculadora.ShowDialog();
+            screenCalculadora.ShowDialog();
+        }
+
+        private void btnMedidas_Click(object sender, EventArgs e)
+        {
+            screenMedidas.ShowDialog();
         }
     }
 }
