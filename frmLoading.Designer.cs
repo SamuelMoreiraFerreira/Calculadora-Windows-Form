@@ -102,6 +102,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Calculadora Ora Ora...";
             Load += frmLoading_Load;
+            KeyDown += frmLoading_KeyDown;
             ((System.ComponentModel.ISupportInitialize)pbxDio).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbxJotaro).EndInit();
             ResumeLayout(false);

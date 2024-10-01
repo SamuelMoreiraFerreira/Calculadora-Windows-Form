@@ -36,5 +36,15 @@ namespace Calculadora
                 pgbCarregamento.Value += 1;
             }
         }
+
+        private void frmLoading_KeyDown(object sender, KeyEventArgs e)
+        {
+            // Easter Egg para pular o loading
+
+            if (e.KeyCode == Keys.Space)
+            {
+                pgbCarregamento.Value = pgbCarregamento.Maximum;
+            }
+        }
     }
 }
